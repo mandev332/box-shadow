@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow Lamp Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scene" id="scene">
+      <div class="lamp" id="lamp"></div>
+      <div class="paper" id="paper"></div>
+      <div class="slider-container">
+        <label
+          for="scaleSlider"
+          style="writing-mode: vertical-lr; margin-left: 60px"
+          >🔆 Lamp & Shadow</label
+        >
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          class="slider"
+          id="scaleSlider"
+        />
+      </div>
+    </div>
+    <div class="info">
+      <div class="info-title">box-shadow:</div>
+      <div class="shadow-values">
+        <input type="number" id="x" />
+        <input type="number" id="y" />
+        <input type="number" id="blur" />
+        <input type="number" id="spread" />
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
